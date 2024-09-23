@@ -1,19 +1,19 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
-import About from './components/About';
+// import About from './components/About';
 import TextForm from './components/TextForms';
 import Alert from './components/Alert';
 import React from "react";
 import { useState } from 'react';
 
-import {Switch } from 'react-router-dom/cjs/react-router-dom';
-import {BrowserRouter as Router,
-  Route,
-  Link,
-  useRouteMatch,
-  useParams
-} from "react-router-dom";
+// import {Switch } from 'react-router-dom/cjs/react-router-dom';
+// import {BrowserRouter as Router,
+//   Route,
+  
+//   useRouteMatch,
+//   useParams
+// } from "react-router-dom";
 import Alerts from './components/Alert';
 
 
@@ -64,20 +64,20 @@ function App() {
   return (
     
     <>
-    <Router>
+    {/* <Router> */}
     <Navbar title="Textutils" aboutText="About us" mode={mode} toggleMode={toggleMode} emode={emode} eyetoggleMode={eyetoggleMode} />
     <Alert alert={alert}/>
 
-     <Switch>
-          <Route exact path="/">
+     {/* <Switch>
+          <Route exact path="/"> */}
           <TextForm showAlert={showAlert} heading="enter the text to analyze" mode={mode} emode={emode} />
-          </Route>
+          {/* </Route>
           <Route path="/about">
             <About />
-          </Route>
+          </Route> */}
         
-        </Switch>
-      </Router>
+        {/* </Switch>
+      </Router> */}
     </>
   
   );
